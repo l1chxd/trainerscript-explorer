@@ -1,0 +1,294 @@
+[
+  {
+    "id": "latissimus-dorsi",
+    "name": "M. latissimus dorsi",
+    "group": "Rücken",
+    "regions": [
+      "ruecken"
+    ],
+    "summary": "Großer Rückenmuskel, zieht den Oberarm zum Körper, rotiert nach innen und führt ihn nach hinten.",
+    "origin": [
+      "Dornfortsätze Th7–L5",
+      "Crista iliaca & Fascia thoracolumbalis",
+      "10.–12. Rippe",
+      "hintere Fläche des Os sacrum"
+    ],
+    "insertion": [
+      "Humerus (Sulcus intertubercularis)"
+    ],
+    "function": [
+      "Adduktion des Arms",
+      "Innenrotation",
+      "Retroversion",
+      "Zieht den Rumpf zum Arm (Klimmzug)",
+      "Atemhilfsmuskel"
+    ],
+    "exercises": [
+      "Klimmzüge / Latzug",
+      "Rudern (Langhantel/Kabel)",
+      "Pulldowns/Latdrücken"
+    ],
+    "tips": [
+      "Volle Schulterblatt-Depression für Lat-Fokus",
+      "Neutral- oder Kammgriff variiert den Fokus"
+    ]
+  },
+  {
+    "id": "trapezius",
+    "name": "M. trapezius (pars descendens/transversa/ascendens)",
+    "group": "Rücken/Schultergürtel",
+    "regions": [
+      "ruecken",
+      "schultern"
+    ],
+    "summary": "Dreiteiliger Kapuzenmuskel: hebt, senkt und zieht die Schulterblätter zusammen; unterstützt Kopf- und Schulterbewegung.",
+    "origin": [
+      "Hinterhauptbein, Nackenband",
+      "Dornfortsätze C7–Th12"
+    ],
+    "insertion": [
+      "laterales Drittel Clavicula",
+      "Acromion",
+      "Spina scapulae"
+    ],
+    "function": [
+      "Pars descendens: Hebung Scapula & Kopfrotation",
+      "Pars transversa: Retraktion Scapula",
+      "Pars ascendens: Depression Scapula"
+    ],
+    "exercises": [
+      "Rudern aufrecht",
+      "Shrugs",
+      "Face Pulls (unterstützend)"
+    ],
+    "tips": [
+      "Bei Shrugs am oberen Punkt kurz halten",
+      "Schulterblätter bewusst bewegen (Pro-/Retraktion)"
+    ]
+  },
+  {
+    "id": "deltoideus",
+    "name": "M. deltoideus",
+    "group": "Schultern",
+    "regions": [
+      "schultern"
+    ],
+    "summary": "Schulterkappenmuskel mit drei Anteilen (vorn/seitlich/hinten) – Abduktion, Ante-/Retroversion und Rotation.",
+    "origin": [
+      "Clavicula (lateral)",
+      "Acromion",
+      "Spina scapulae"
+    ],
+    "insertion": [
+      "Tuberositas deltoidea (Humerus)"
+    ],
+    "function": [
+      "Pars acromialis: Abduktion",
+      "Pars clavicularis: Anteversion & Innenrotation",
+      "Pars spinalis: Retroversion & Außenrotation"
+    ],
+    "exercises": [
+      "Seitheben",
+      "Schulterdrücken",
+      "Reverse Flys"
+    ],
+    "tips": [
+      "Seitheben mit leichter Innenrotation vermeiden – neutral/leicht außenrot."
+    ]
+  },
+  {
+    "id": "biceps-brachii",
+    "name": "M. biceps brachii",
+    "group": "Arme – Beuger",
+    "regions": [
+      "arme"
+    ],
+    "summary": "Zweiköpfiger Armbeuger; beugt den Ellenbogen und supiniert den Unterarm; stabilisiert Schulter.",
+    "origin": [
+      "Caput longum: Tuberculum supraglenoidale",
+      "Caput breve: Processus coracoideus"
+    ],
+    "insertion": [
+      "Tuberositas radii"
+    ],
+    "function": [
+      "Ellenbogenflexion",
+      "Supination der Hand",
+      "Schulter: Anteversion/Fixierung Humeruskopf"
+    ],
+    "exercises": [
+      "Curls (LH/KH/Kabel)",
+      "Chin-Ups (supiniert)"
+    ],
+    "tips": [
+      "Vollen ROM nutzen, Ellbogen stabil halten"
+    ]
+  },
+  {
+    "id": "triceps-brachii",
+    "name": "M. triceps brachii",
+    "group": "Arme – Strecker",
+    "regions": [
+      "arme"
+    ],
+    "summary": "Dreiköpfiger Armstrecker; streckt im Ellenbogen, langes Kopf unterstützt Retroversion/Adduktion.",
+    "origin": [
+      "Caput longum: Scapula",
+      "Caput laterale & mediale: Humerus"
+    ],
+    "insertion": [
+      "Olecranon (Ulna)"
+    ],
+    "function": [
+      "Ellenbogenextension",
+      "Retroversion & leichte Adduktion (Caput longum)"
+    ],
+    "exercises": [
+      "Dips",
+      "Pushdowns",
+      "Overhead Extensions"
+    ],
+    "tips": [
+      "Ellbogen nicht ausweichen lassen, Schulter stabilisieren"
+    ]
+  },
+  {
+    "id": "rectus-abdominis",
+    "name": "M. rectus abdominis",
+    "group": "Rumpf – Bauch",
+    "regions": [
+      "bauch"
+    ],
+    "summary": "Gerader Bauchmuskel; Beugung des Rumpfs, Bauchpresse, Beckenhebung.",
+    "origin": [
+      "Rippenknorpel & Sternum (kranial)"
+    ],
+    "insertion": [
+      "Schambein/Becken (kaudal)"
+    ],
+    "function": [
+      "Rumpfbeugung",
+      "Bauchpresse",
+      "Beckenaufrichtung"
+    ],
+    "exercises": [
+      "Crunches",
+      "Kabel-Crunch",
+      "Beinheben (Pezziball)"
+    ],
+    "tips": [
+      "Becken kippen (Posterior Pelvic Tilt) für Bauchfokus"
+    ]
+  },
+  {
+    "id": "quadriceps-femoris",
+    "name": "M. quadriceps femoris",
+    "group": "Beine – Vorderseite",
+    "regions": [
+      "quads"
+    ],
+    "summary": "Vierköpfiger Kniestrecker; Rectus femoris beugt zusätzlich in der Hüfte.",
+    "origin": [
+      "Rectus femoris: Os ilium",
+      "Vasti: Femur"
+    ],
+    "insertion": [
+      "Patella / Lig. patellae → Tuberositas tibiae"
+    ],
+    "function": [
+      "Knieextension",
+      "Hüftflexion (rectus femoris)"
+    ],
+    "exercises": [
+      "Kniebeugen",
+      "Beinstrecker",
+      "Ausfallschritte"
+    ],
+    "tips": [
+      "Volle Knieextension kontrolliert, Knie über Fußspitzen ok bei Kontrolle"
+    ]
+  },
+  {
+    "id": "ischiocrurale",
+    "name": "Ischiocrurale (Hamstrings)",
+    "group": "Beine – Rückseite",
+    "regions": [
+      "hamstrings"
+    ],
+    "summary": "Dreiergruppe (biceps femoris, semitendinosus, semimembranosus); Hüftextension & Kniebeugung.",
+    "origin": [
+      "Os ischii (Sitzbein)"
+    ],
+    "insertion": [
+      "Tibia/Fibula (medial/lateral)"
+    ],
+    "function": [
+      "Hüftextension",
+      "Knieflexion",
+      "Rotation Unterschenkel (je nach Anteil)"
+    ],
+    "exercises": [
+      "Rumänisches Heben",
+      "Beinbeuger liegend/sitzend",
+      "Hip Hinge-Varianten"
+    ],
+    "tips": [
+      "Keine Endrange-Gleichzeitigkeit: volle Hüftextension und maximale Knieflexion nicht kombinieren"
+    ]
+  },
+  {
+    "id": "triceps-surae",
+    "name": "M. triceps surae (Gastrocnemius & Soleus)",
+    "group": "Unterschenkel – Waden",
+    "regions": [
+      "waaden"
+    ],
+    "summary": "Oberflächliche Wadenmuskulatur; Plantarflexion, Supination. Gastrocnemius beugt im Knie.",
+    "origin": [
+      "Femur (Gastrocnemius)",
+      "Tibia/Fibula (Soleus)"
+    ],
+    "insertion": [
+      "Achillessehne → Fersenbein"
+    ],
+    "function": [
+      "Plantarflexion",
+      "Supination",
+      "Knieflexion (Gastrocnemius)"
+    ],
+    "exercises": [
+      "Wadenheben im Stand/Sitz"
+    ],
+    "tips": [
+      "Durchgestrecktes vs. gebeugtes Knie betont Gastrocnemius vs. Soleus"
+    ]
+  },
+  {
+    "id": "glutei",
+    "name": "M. glutaeus maximus/medius/minimus",
+    "group": "Gesäß",
+    "regions": [
+      "glutes"
+    ],
+    "summary": "Gesäßmuskeln: Hüftextension, Stabilität, Außen-/Innenrotation, Abduktion.",
+    "origin": [
+      "Os ilium, Kreuzbein, Faszien"
+    ],
+    "insertion": [
+      "Femur (Trochanter major u.a.)"
+    ],
+    "function": [
+      "Extension & Außenrotation (maximus)",
+      "Abduktion & Stabilisierung (medius/minimus)",
+      "Innen-/Außenrotation je nach Fasern"
+    ],
+    "exercises": [
+      "Hip Thrusts",
+      "Bulgarian Split Squats",
+      "Abduktion (Cable/Band)"
+    ],
+    "tips": [
+      "Volle Hüftstreckung mit Beckenstabilität"
+    ]
+  }
+]

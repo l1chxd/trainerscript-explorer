@@ -1,0 +1,32 @@
+[
+  {
+    "key": "pech",
+    "title": "PECH-Regel",
+    "desc": "Pause – Eis – Compression – Hochlagern als Erstmaßnahme."
+  },
+  {
+    "key": "knochenbruch",
+    "title": "Knochenbruch",
+    "desc": "Starke Schmerzen/Fehlstellung – Immobilisieren, ärztlich abklären."
+  },
+  {
+    "key": "arthrose",
+    "title": "Arthrose",
+    "desc": "Gelenkverschleiß; schonende Kräftigung, Technik & Belastungssteuerung beachten."
+  },
+  {
+    "key": "muskelverletzung",
+    "title": "Muskelverletzung",
+    "desc": "Zerrung/Faserriss – PECH, langsamer Belastungsaufbau, exzentrisches Training später."
+  },
+  {
+    "key": "sehnenverletzung",
+    "title": "Sehnenverletzung",
+    "desc": "Tendinopathien – Lastmanagement, Tempoarbeit, isometrisch → exzentrisch."
+  },
+  {
+    "key": "hexenschuss",
+    "title": "Hexenschuss (Lumbago)",
+    "desc": "Akute Rückenschmerzen – schonende Mobilität, Wärme/Kälte, ärztlich prüfen."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "zone": "Rekom",
+    "intensity": "~55–70% HFmax",
+    "methods": [
+      "Dauermethode"
+    ],
+    "goal": "Erholung, Ausgleich, Fettstoffwechsel"
+  },
+  {
+    "zone": "GA1/KA1",
+    "intensity": "~65–80% HFmax",
+    "methods": [
+      "Dauermethode"
+    ],
+    "goal": "Grundlagenausdauer stabilisieren"
+  },
+  {
+    "zone": "GA1/2",
+    "intensity": "~70–85% HFmax",
+    "methods": [
+      "Variable Dauer, Fahrtspiel"
+    ],
+    "goal": "Ökonomisierung GA"
+  },
+  {
+    "zone": "GA2/KA2",
+    "intensity": "~75–90% HFmax",
+    "methods": [
+      "Dauer, Fahrtspiel, Extensive Intervalle"
+    ],
+    "goal": "GA/Kraftausdauer entwickeln"
+  },
+  {
+    "zone": "WSA/EB",
+    "intensity": ">90% HFmax",
+    "methods": [
+      "Intensive Intervalle",
+      "Wiederholungen",
+      "Wettkampf"
+    ],
+    "goal": "wettkampfspezifische Leistung"
+  }
+]
