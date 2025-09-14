@@ -1,0 +1,9 @@
+---
+title: Reizschwelle – Kurz erklärt
+tags: [trainingslehre, prinzipien]
+source: { doc: "HSFA_B-Lizenz_V24.4-2", pages: "" }
+---
+**TODO:** Kernaussagen in eigenen Worten.
+- Unterschwellige Reize …
+- Wirksamer Reiz …
+- Überlastung …

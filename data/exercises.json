@@ -1,0 +1,43 @@
+[
+  {
+    "id": "romanian-deadlift",
+    "name": "Rumänisches Kreuzheben",
+    "pattern": "hinge",
+    "primary": [
+      "ischiocrurale",
+      "glutei"
+    ],
+    "secondary": [
+      "erector-spinae",
+      "core"
+    ],
+    "setup": [
+      "TODO"
+    ],
+    "execution": [
+      "TODO"
+    ],
+    "common_errors": [
+      "TODO"
+    ],
+    "coaching_cues": [
+      "TODO"
+    ],
+    "regression": [
+      "TODO"
+    ],
+    "progression": [
+      "TODO"
+    ],
+    "contraindications": [
+      "TODO"
+    ],
+    "safe_alternatives": [
+      "TODO"
+    ],
+    "source": {
+      "doc": "HSFA_B-Lizenz_V24.4-2",
+      "pages": ""
+    }
+  }
+]
