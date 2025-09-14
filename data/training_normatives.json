@@ -1,0 +1,7 @@
+[
+  {"name": "Intensität", "desc": "Belastungsgrad, z. B. %1RM oder Herzfrequenz."},
+  {"name": "Umfang", "desc": "Gesamte Arbeit: Sätze×Wdh, Strecke, Zeit."},
+  {"name": "Dichte", "desc": "Verhältnis von Belastung zu Pause."},
+  {"name": "Häufigkeit", "desc": "Trainingseinheiten pro Zeitraum."},
+  {"name": "Komplexität", "desc": "Koordinative/technische Anforderungen."}
+]

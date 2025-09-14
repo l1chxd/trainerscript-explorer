@@ -7,6 +7,11 @@
   --fg: 17 24 39;
 }
 
+.dark {
+  --bg: 17 24 39;
+  --fg: 243 244 246;
+}
+
 html, body {
   height: 100%;
 }
@@ -19,9 +24,9 @@ body {
 .container-prose h1 { @apply text-3xl md:text-4xl font-semibold tracking-tight; }
 .container-prose h2 { @apply text-2xl md:text-3xl font-semibold mt-6; }
 .container-prose p  { @apply leading-relaxed; }
-.card { @apply rounded-2xl shadow-soft border border-gray-200 bg-white; }
-.btn { @apply rounded-2xl px-4 py-2 font-medium border border-gray-300 hover:border-gray-400 active:scale-[.99] transition; }
-.badge { @apply inline-flex items-center rounded-full px-2 py-0.5 text-xs border border-gray-200; }
-.input { @apply w-full rounded-xl border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-gray-300; }
-.sidebar-link { @apply flex items-center gap-2 rounded-xl px-3 py-2 hover:bg-gray-100; }
+.card { @apply rounded-2xl shadow-soft border border-gray-200 bg-white dark:bg-gray-800 dark:border-gray-700; }
+.btn { @apply rounded-2xl px-4 py-2 font-medium border border-gray-300 hover:border-gray-400 active:scale-[.99] transition dark:border-gray-700 dark:hover:border-gray-600; }
+.badge { @apply inline-flex items-center rounded-full px-2 py-0.5 text-xs border border-gray-200 dark:border-gray-700; }
+.input { @apply w-full rounded-xl border border-gray-300 px-3 py-2 outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100 dark:focus:ring-gray-600; }
+.sidebar-link { @apply flex items-center gap-2 rounded-xl px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800; }
 .grid-cards { @apply grid gap-4 sm:grid-cols-2 lg:grid-cols-3; }

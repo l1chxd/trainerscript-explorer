@@ -1,0 +1,5 @@
+[
+  {"name": "Lineare Periodisierung", "desc": "Kontinuierliche Steigerung von Intensität bei sinkendem Volumen."},
+  {"name": "Undulierende Periodisierung", "desc": "Regelmäßige Variation von Intensität und Volumen innerhalb kurzer Zyklen."},
+  {"name": "Blockperiodisierung", "desc": "Fokusblöcke (z. B. Hypertrophie, Kraft, Leistung) nacheinander."}
+]
