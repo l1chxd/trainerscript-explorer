@@ -290,5 +290,93 @@
     "tips": [
       "Volle Hüftstreckung mit Beckenstabilität"
     ]
+  },
+  {
+    "id": "pectoralis-major",
+    "name": "M. pectoralis major",
+    "group": "Brust",
+    "regions": [
+      "brust"
+    ],
+    "summary": "Großer Brustmuskel; adduziert, innenrotiert und beugt den Arm.",
+    "origin": [
+      "Clavicula (mediale Hälfte)",
+      "Sternum",
+      "1.–6. Rippenknorpel"
+    ],
+    "insertion": [
+      "Crista tuberculi majoris (Humerus)"
+    ],
+    "function": [
+      "Adduktion",
+      "Innenrotation",
+      "Anteversion"
+    ],
+    "exercises": [
+      "Bankdrücken",
+      "Liegestütze",
+      "Fliegende"
+    ],
+    "tips": [
+      "Schulterblätter retra- und depressiert halten",
+      "Oberarm leicht innenrotieren für Oberbrustfokus"
+    ]
+  },
+  {
+    "id": "triceps-brachii",
+    "name": "M. triceps brachii",
+    "group": "Arme – Strecker",
+    "regions": [
+      "arme"
+    ],
+    "summary": "Dreiköpfiger Armstrecker; streckt Ellbogen und retrovertiert den Arm.",
+    "origin": [
+      "Caput longum: Tuberculum infraglenoidale",
+      "Caput laterale & mediale: Humerus"
+    ],
+    "insertion": [
+      "Olecranon (Ulna)"
+    ],
+    "function": [
+      "Ellbogenextension",
+      "Schulterretroversion (caput longum)"
+    ],
+    "exercises": [
+      "Dips",
+      "Trizepsdrücken (Kabel)",
+      "Enges Bankdrücken"
+    ],
+    "tips": [
+      "Ellbogen stabil am Körper halten"
+    ]
+  },
+  {
+    "id": "obliquus-externus-abdominis",
+    "name": "M. obliquus externus abdominis",
+    "group": "Bauch – seitlich",
+    "regions": [
+      "bauch"
+    ],
+    "summary": "Äußerer schräger Bauchmuskel; rotiert und neigt den Rumpf.",
+    "origin": [
+      "5.–12. Rippe"
+    ],
+    "insertion": [
+      "Linea alba",
+      "Crista iliaca"
+    ],
+    "function": [
+      "Rumpfrotation",
+      "Lateralflexion",
+      "Bauchpresse"
+    ],
+    "exercises": [
+      "Russian Twist",
+      "Seitstütz",
+      "Holzhacker"
+    ],
+    "tips": [
+      "Bewegung aus dem Rumpf, nicht aus den Armen"
+    ]
   }
 ]
