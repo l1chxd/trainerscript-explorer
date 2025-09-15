@@ -1,0 +1,7 @@
+{
+  "name": "fuse.js",
+  "version": "6.6.2",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT"
+}
