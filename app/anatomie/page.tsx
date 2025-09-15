@@ -3,6 +3,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import type { Route } from "next";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import Fuse from "fuse.js";
 import BodyMap from "@/components/BodyMap";
 import MuscleCard from "@/components/MuscleCard";
 import type { Muscle, RegionKey } from "@/types";
@@ -40,16 +41,37 @@ function AnatomiePageContent() {
   const [region, setRegion] = useState<RegionKey | "all">(initialRegion);
   const muscles = musclesData as Muscle[];
 
+  const fuse = useMemo(() => {
+    return new Fuse<Muscle>(muscles, {
+      keys: [
+        "name",
+        "group",
+        "summary",
+        "origin",
+        "insertion",
+        "function",
+        "exercises",
+        "tips",
+      ],
+      threshold: 0.35,
+      ignoreLocation: true,
+    });
+  }, [muscles]);
+
   const filtered = useMemo(() => {
-    return muscles.filter(m => {
-      const matchText = [m.name, m.group, m.summary, ...m.origin, ...m.insertion, ...m.function, ...(m.exercises??[])]
-        .join(" ")
-        .toLowerCase()
-        .includes(query.toLowerCase());
-      const matchRegion = region === "all" ? true : m.regions.includes(region);
-      return matchText && matchRegion;
-    })
-  }, [query, region, muscles]);
+    const matchesRegion = (muscle: Muscle) =>
+      region === "all" ? true : muscle.regions.includes(region);
+
+    const trimmedQuery = query.trim();
+
+    if (!trimmedQuery) {
+      return muscles.filter(matchesRegion);
+    }
+
+    const fuzzyMatches = fuse.search(trimmedQuery).map((result) => result.item);
+
+    return fuzzyMatches.filter(matchesRegion);
+  }, [fuse, muscles, query, region]);
 
   useEffect(() => {
     const nextRegion = parseRegionParam(searchParams.get("region"));
