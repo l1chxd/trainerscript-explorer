@@ -34,7 +34,12 @@ export default function AnatomiePage() {
         <BodyMap onSelect={(r) => setRegion(r)} />
         <div className="space-y-2">
           <label className="text-sm text-gray-500">Suche</label>
-          <input className="input" placeholder="z.B. Latissimus, Abduktion ..." value={query} onChange={e=>setQuery(e.target.value)} />
+          <input
+            className="input"
+            placeholder="z.B. Latissimus, Abduktion ..."
+            value={query}
+            onChange={(event: { target: { value: string } }) => setQuery(event.target.value)}
+          />
         </div>
         <div className="flex gap-2 flex-wrap">
           <button className={`btn ${region==="all" ? "bg-gray-100" : ""}`} onClick={()=>setRegion("all")}>Alle</button>
