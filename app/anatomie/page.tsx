@@ -1,14 +1,43 @@
 'use client';
 
-import { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import type { Route } from "next";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import BodyMap from "@/components/BodyMap";
 import MuscleCard from "@/components/MuscleCard";
 import type { Muscle, RegionKey } from "@/types";
 import musclesData from "@/data/muscles.json";
 
-export default function AnatomiePage() {
-  const [query, setQuery] = useState("");
-  const [region, setRegion] = useState<RegionKey | "all">("all");
+const REGION_OPTIONS: RegionKey[] = [
+  "ruecken",
+  "brust",
+  "schultern",
+  "arme",
+  "bauch",
+  "glutes",
+  "quads",
+  "hamstrings",
+  "waaden",
+];
+
+const parseRegionParam = (value: string | null): RegionKey | "all" => {
+  if (!value) {
+    return "all";
+  }
+
+  const regionValue = value as RegionKey;
+  return REGION_OPTIONS.includes(regionValue) ? regionValue : "all";
+};
+
+function AnatomiePageContent() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const initialQuery = searchParams.get("q") ?? "";
+  const initialRegion = parseRegionParam(searchParams.get("region"));
+  const [query, setQuery] = useState(initialQuery);
+  const [region, setRegion] = useState<RegionKey | "all">(initialRegion);
   const muscles = musclesData as Muscle[];
 
   const filtered = useMemo(() => {
@@ -23,9 +52,34 @@ export default function AnatomiePage() {
   }, [query, region, muscles]);
 
   useEffect(() => {
-    // reset search when region changes
-    setQuery("");
-  }, [region]);
+    const nextRegion = parseRegionParam(searchParams.get("region"));
+    const nextQuery = searchParams.get("q") ?? "";
+
+    setRegion(current => (current === nextRegion ? current : nextRegion));
+    setQuery(current => (current === nextQuery ? current : nextQuery));
+  }, [searchParams]);
+
+  useEffect(() => {
+    const params = new URLSearchParams();
+
+    if (region !== "all") {
+      params.set("region", region);
+    }
+
+    if (query.length > 0) {
+      params.set("q", query);
+    }
+
+    const nextQueryString = params.toString();
+    const currentQueryString = searchParams.toString();
+
+    if (nextQueryString === currentQueryString) {
+      return;
+    }
+
+    const nextUrl = nextQueryString ? `${pathname}?${nextQueryString}` : pathname;
+    router.replace(nextUrl as Route, { scroll: false });
+  }, [region, query, pathname, router, searchParams]);
 
   return (
     <div className="grid lg:grid-cols-3 gap-8">
@@ -43,8 +97,8 @@ export default function AnatomiePage() {
         </div>
         <div className="flex gap-2 flex-wrap">
           <button className={`btn ${region==="all" ? "bg-gray-100" : ""}`} onClick={()=>setRegion("all")}>Alle</button>
-          {["ruecken","brust","schultern","arme","bauch","glutes","quads","hamstrings","waaden"].map((r) => (
-            <button key={r} className={`btn ${region===r ? "bg-gray-100" : ""}`} onClick={()=>setRegion(r as RegionKey)}>{r}</button>
+          {REGION_OPTIONS.map((r) => (
+            <button key={r} className={`btn ${region===r ? "bg-gray-100" : ""}`} onClick={()=>setRegion(r)}>{r}</button>
           ))}
         </div>
       </aside>
@@ -60,5 +114,13 @@ export default function AnatomiePage() {
         )}
       </section>
     </div>
+  );
+}
+
+export default function AnatomiePage() {
+  return (
+    <React.Suspense fallback={null}>
+      <AnatomiePageContent />
+    </React.Suspense>
   );
 }
