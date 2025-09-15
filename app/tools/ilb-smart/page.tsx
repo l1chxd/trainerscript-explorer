@@ -16,19 +16,38 @@ export default function ILBSMARTPage() {
         <div className="grid sm:grid-cols-2 gap-4">
           <label className="space-y-1">
             <span>Ausgangsleistung (z. B. 1RM)</span>
-            <input className="input" type="number" value={start} onChange={(e) => setStart(Number(e.target.value))} />
+            <input
+              className="input"
+              type="number"
+              value={start}
+              onChange={(event: { target: { value: string } }) => setStart(Number(event.target.value))}
+            />
           </label>
           <label className="space-y-1">
             <span>Zielleistung</span>
-            <input className="input" type="number" value={ziel} onChange={(e) => setZiel(Number(e.target.value))} />
+            <input
+              className="input"
+              type="number"
+              value={ziel}
+              onChange={(event: { target: { value: string } }) => setZiel(Number(event.target.value))}
+            />
           </label>
           <label className="space-y-1">
             <span>Zeitraum (Wochen)</span>
-            <input className="input" type="number" value={wochen} onChange={(e) => setWochen(Number(e.target.value))} />
+            <input
+              className="input"
+              type="number"
+              value={wochen}
+              onChange={(event: { target: { value: string } }) => setWochen(Number(event.target.value))}
+            />
           </label>
           <label className="space-y-1 sm:col-span-2">
             <span>SMART-Ziel</span>
-            <input className="input" value={goal} onChange={(e) => setGoal(e.target.value)} />
+            <input
+              className="input"
+              value={goal}
+              onChange={(event: { target: { value: string } }) => setGoal(event.target.value)}
+            />
           </label>
         </div>
         <p className="text-gray-700">

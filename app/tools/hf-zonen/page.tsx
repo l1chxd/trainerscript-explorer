@@ -16,11 +16,21 @@ export default function HFZonenPage() {
         <div className="grid sm:grid-cols-2 gap-4">
           <label className="space-y-1">
             <span>Alter</span>
-            <input className="input" type="number" value={age} onChange={(e) => setAge(Number(e.target.value))} />
+            <input
+              className="input"
+              type="number"
+              value={age}
+              onChange={(event: { target: { value: string } }) => setAge(Number(event.target.value))}
+            />
           </label>
           <label className="space-y-1">
             <span>Ruhepuls</span>
-            <input className="input" type="number" value={rest} onChange={(e) => setRest(Number(e.target.value))} />
+            <input
+              className="input"
+              type="number"
+              value={rest}
+              onChange={(event: { target: { value: string } }) => setRest(Number(event.target.value))}
+            />
           </label>
         </div>
         <table className="w-full text-left">

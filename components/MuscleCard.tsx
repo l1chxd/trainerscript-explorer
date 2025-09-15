@@ -1,10 +1,17 @@
+import Link from "next/link";
 import { Dumbbell, Info } from "lucide-react";
 
-export default function MuscleCard({ m }: { m: any }) {
+import type { Muscle } from "@/types";
+
+export default function MuscleCard({ m }: { m: Muscle }) {
   return (
     <div className="card p-4 flex flex-col gap-3">
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold">{m.name}</h3>
+        <h3 className="text-lg font-semibold">
+          <Link href={`/anatomie/${m.id}`} className="hover:underline">
+            {m.name}
+          </Link>
+        </h3>
         <span className="badge">{m.group}</span>
       </div>
       <p className="text-sm text-gray-600">{m.summary}</p>
