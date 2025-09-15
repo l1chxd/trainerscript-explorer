@@ -78,6 +78,12 @@ git remote add origin https://github.com/<dein-user>/trainerscript-explorer.git
 git push -u origin main
 ```
 
+## Contribution Guide
+
+- Bitte nutze das PR-Template und hake die Checkliste gewissenhaft ab.
+- Führe vor dem Push `npm run build` aus und prüfe, dass `source.pages` gesetzt ist.
+- Vermeide große Dateien (> 5 MB) und halte dich an das Coding-Style-Guideline aus der `.editorconfig`.
+
 ## Ideen/Nächste Schritte
 
 - ✅ Seiten für Ernährung & Kommunikation (Module aus dem Skript)
