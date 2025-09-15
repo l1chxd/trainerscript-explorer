@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate:data": "node scripts/run-ts.cjs scripts/validate-data.ts"
   },
   "dependencies": {
     "framer-motion": "^11.3.31",
@@ -14,7 +15,8 @@
     "lucide-react": "^0.452.0",
     "next": "14.2.5",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "zod": "file:vendor/zod"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.18",
