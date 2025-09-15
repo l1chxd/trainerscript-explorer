@@ -1,5 +1,7 @@
 # TrainerScript Explorer
 
+[![CI](https://github.com/codex/trainerscript-explorer/actions/workflows/ci.yml/badge.svg)](https://github.com/codex/trainerscript-explorer/actions/workflows/ci.yml)
+
 Interaktive Übersicht (Next.js + Tailwind) über Anatomie, Trainingslehre, Ausdauer, HKS, Physiologie sowie Verletzungen. Klickbare Körperkarte, Filter, Suche und modulare JSON-Daten.
 
 > ⚠️ **Rechte/Urheberrecht:** Dieses Repo enthält **nur paraphrasierte Kurzfassungen** und Demo-Daten. Wenn du Inhalte aus deinem Skript vollständig übernehmen möchtest, stelle sicher, dass du die Rechte dafür besitzt.

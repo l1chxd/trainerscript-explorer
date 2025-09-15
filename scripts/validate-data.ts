@@ -2,6 +2,11 @@ import { readFile } from 'fs/promises';
 import path from 'path';
 import { z, ZodIssue, ZodType } from 'zod';
 
+declare const process: {
+  cwd(): string;
+  exitCode?: number;
+};
+
 type DatasetConfig<T> = {
   file: string;
   schema: ZodType<T>;
@@ -98,7 +103,7 @@ function formatPath(pathSegments: Array<string | number>): string {
     return '(root)';
   }
 
-  return pathSegments.reduce((acc, segment) => {
+  return pathSegments.reduce<string>((acc, segment) => {
     if (typeof segment === 'number') {
       return `${acc}[${segment}]`;
     }
