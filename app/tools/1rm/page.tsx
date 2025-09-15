@@ -11,6 +11,8 @@ const numberFormatter = new Intl.NumberFormat("de-DE", {
   maximumFractionDigits: 1,
 });
 
+type InputChangeEvent = { target: { value: string } };
+
 const quickButtonClassName = [
   "rounded-xl",
   "border",
@@ -95,7 +97,7 @@ export default function OneRepMaxPage() {
                 min="0"
                 step="0.5"
                 value={weightInput}
-                onChange={(event) => setWeightInput(event.target.value)}
+                onChange={(event: InputChangeEvent) => setWeightInput(event.target.value)}
               />
             </label>
             <div className="flex flex-wrap gap-2">
@@ -121,7 +123,7 @@ export default function OneRepMaxPage() {
                 min="1"
                 step="1"
                 value={repsInput}
-                onChange={(event) => setRepsInput(event.target.value)}
+                onChange={(event: InputChangeEvent) => setRepsInput(event.target.value)}
               />
             </label>
             <div className="flex flex-wrap gap-2">
