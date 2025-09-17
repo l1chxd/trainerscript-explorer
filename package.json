@@ -13,10 +13,13 @@
   "dependencies": {
     "framer-motion": "^11.3.31",
     "fuse.js": "file:vendor/fuse.js",
+    "gray-matter": "file:vendor/gray-matter",
     "lucide-react": "^0.452.0",
     "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "remark": "file:vendor/remark",
+    "remark-html": "file:vendor/remark-html",
     "zod": "file:vendor/zod"
   },
   "devDependencies": {

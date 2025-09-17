@@ -26,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <a className="btn" href="/verletzungen">Verletzungen</a>
                 <a className="btn" href="/hks">HKS</a>
                 <a className="btn" href="/physiologie">Physiologie</a>
+                <a className="btn" href="/wissen">Wissen</a>
                 <a className="btn" href="/tools">Tools</a>
                 <ThemeToggle />
               </nav>
