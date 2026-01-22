@@ -1,21 +1,12 @@
-# TrainerScript Explorer
-
-[![CI](https://github.com/codex/trainerscript-explorer/actions/workflows/ci.yml/badge.svg)](https://github.com/codex/trainerscript-explorer/actions/workflows/ci.yml)
 
 Interaktive Übersicht (Next.js + Tailwind) über Anatomie, Trainingslehre, Ausdauer, HKS, Physiologie sowie Verletzungen. Klickbare Körperkarte, Filter, Suche und modulare JSON-Daten.
 
-> ⚠️ **Rechte/Urheberrecht:** Dieses Repo enthält **nur paraphrasierte Kurzfassungen** und Demo-Daten. Wenn du Inhalte aus deinem Skript vollständig übernehmen möchtest, stelle sicher, dass du die Rechte dafür besitzt.
+**Rechte/Urheberrecht:** Dieses Repo enthält **nur paraphrasierte Kurzfassungen** und Demo-Daten
 
 ## Features
 
-- ✅ Next.js (App Router) + TypeScript
-- ✅ Tailwind CSS (klare, moderne UI)
-- ✅ Klickbare Körperkarte (SVG) + Filter nach Regionen
-- ✅ Anatomie-Daten als JSON (Ursprung/Ansatz/Funktionen/Übungen/Tipps)
-- ✅ Seiten für Trainingslehre, Ausdauerzonen & Verletzungen
-- ✅ Saubere Struktur, leicht erweiterbar
-
-## Los geht's
+- Next.js (App Router) + TypeScript
+- Tailwind CSS (klare, moderne UI)
 
 ```bash
 # Abhängigkeiten installieren
@@ -30,7 +21,6 @@ npm start
 ```
 
 ## Projektstruktur
-
 ```
 app/                # Next.js App Router Seiten
 components/         # UI-Komponenten (BodyMap, Muskelkarten)
@@ -42,7 +32,6 @@ public/             # Assets
 ## Daten erweitern
 
 **Anatomie**: `data/muscles.json`
-
 ```json
 {
   "id": "latissimus-dorsi",
@@ -67,29 +56,11 @@ public/             # Assets
 
 **Verletzungen**: `data/injuries.json` – Stichworte & Erstmaßnahmen.
 
-## GitHub veröffentlichen
-
-```bash
-git init
-git add .
-git commit -m "feat: initial Trainerscript Explorer"
-git branch -M main
-git remote add origin https://github.com/<dein-user>/trainerscript-explorer.git
-git push -u origin main
-```
-
-## Contribution Guide
-
-- Bitte nutze das PR-Template und hake die Checkliste gewissenhaft ab.
-- Führe vor dem Push `npm run build` aus und prüfe, dass `source.pages` gesetzt ist.
-- Vermeide große Dateien (> 5 MB) und halte dich an das Coding-Style-Guideline aus der `.editorconfig`.
-
 ## Ideen/Nächste Schritte
 
-- ✅ Seiten für Ernährung & Kommunikation (Module aus dem Skript)
-- ✅ Detailseiten je Muskel (/anatomie/[id]) inkl. Variationen & Fehlerbildern
-- ✅ ILB/SMART-Planung, Hfmax-Rechner, Karvonen-Tool
-- ✅ Diagramme (Volumen/Intensität) via Recharts
-- ✅ Dark Mode & PWA
+- Seiten für Ernährung & Kommunikation (Module aus dem Skript)
+- Detailseiten je Muskel (/anatomie/[id]) inkl. Variationen & Fehlerbildern
+- ILB/SMART-Planung, Hfmax-Rechner, Karvonen-Tool
+- Diagramme (Volumen/Intensität) via Recharts
+- Dark Mode & PWA
 
-Viel Spaß beim Ausbauen! 💪
